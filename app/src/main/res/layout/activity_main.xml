@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liuwangping.time_network.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <RadioGroup
+        android:id="@+id/activity_main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/activity_main_home"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_home"
+            android:text="首页"
+            android:checked="true"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_shop"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_buyticket"
+            android:text="购票"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_marker"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_shop"
+            android:text="商城"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_live_telecast"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_livetelecast"
+            android:text="发现"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_me"
+            style="@style/radio_button"
+            android:background="@drawable/rb_selector_my"
+            android:text="我的"
+            android:textColor="@color/black"/>
+    </RadioGroup>
+
+
+</LinearLayout>
